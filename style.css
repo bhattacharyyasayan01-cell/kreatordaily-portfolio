@@ -1,0 +1,65 @@
+/* Reset + Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #0d0d0d;
+  color: #c0c0c0;
+  line-height: 1.6;
+  text-align: center;
+  padding: 2rem;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+.brand {
+  font-size: 3rem;
+  font-weight: 700;
+  color: silver;
+  letter-spacing: 2px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+h2 {
+  margin: 2rem 0 1rem;
+  color: silver;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 2rem;
+  color: #aaa;
+  font-style: italic;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border-color: silver;
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
